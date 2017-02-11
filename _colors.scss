@@ -1,0 +1,16 @@
+$colors: (
+  red:           #e41648,
+  blue-darkest:  #00193c,
+  green:         #89ba17,
+  grey-darkest:  #47535b,
+  grey-darker:   #6c757c,
+  grey-dark:     #91989d,
+  grey:          #b5babd,
+  grey-light:    #daddde,
+  grey-lighter:  #ecedee,
+  grey-lightest: #f6f6f7
+);
+
+@function color($name) {
+  @return map-get($colors, $name);
+}
